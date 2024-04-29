@@ -5,7 +5,7 @@ import AddTransactionForm from "./AddTransactionForm";
 
 function AccountContainer() {
   const [transactions, setTransactions] = useState ([]);
-  const [search ,setSearch] = useState ("Chipotle")
+  const [search ,setSearch] = useState ("")
 
   useEffect(()=>{
     fetch ("http://localhost:8001/transactions")
